@@ -10,4 +10,38 @@ This tool takes a three-column CSV file (representing x, y, z coordinates) and g
 - Import into CAD or 3D modeling software
 - 3D printing experiments
 
-# How does it work?
+## How?
+### 1. Clone this repository
+
+```bash
+git clone https://github.com/AlessiaGouveia/CSV-to-STL.git
+cd CSV-to-STL
+```
+
+### 2. Install dependencies
+Make sure you have Python 3.x installed, then install the required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+### 3. Run the script
+Provide your own CSV file (with three columns: x,y,z) and specify an output STL filename:
+
+```bash
+python csv_to_stl.py input.csv output.stl
+```
+
+### 4. View the result 
+Open the generated output.stl in any 3D viewer or CAD software.
+
+## Example
+
+An example CSV file (example.csv) is included in this repository so you can test quickly.
+
+#### Run the script:
+
+```bash
+python csv_to_stl.py example.csv example.stl
+```
+
+
